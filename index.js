@@ -15,7 +15,7 @@ async function main() {
             { role: 'user', content: 'What is the capital of India?' }
         ]
     });
-   console.log(chatCompletion);
+   console.log(chatCompletion.data.choices[0].message.content);
 }
 
 main();
